@@ -51,6 +51,12 @@ h2{font-size:30px;font-weight:700;line-height:1.3}
 /* green hero */
 .hero{background:var(--green);color:var(--cream);padding:40px 24px 0;display:flex;flex-direction:column}
 .frame{border:1px solid #cfd3c0;border-radius:60px 60px 18px 18px;margin:0 6px;padding:6px}
+.frame img{
+  width: 138px;
+    position: absolute;
+    top: -43px;
+    right: 126px;
+}
 .frame>div{border:1px solid #cfd3c0;border-radius:54px 54px 14px 14px;padding:30px 20px 34px;display:flex;flex-direction:column;align-items:center;gap:12px}
 .mono{width:54px;height:54px;border:1px solid var(--cream);border-radius:50%;display:grid;place-items:center;font-size:21px}
 .dates{font-size:12px;letter-spacing:.25em;opacity:.85}
@@ -96,8 +102,8 @@ h2{font-size:30px;font-weight:700;line-height:1.3}
 .frame{position:relative}
 .crown{position:absolute;top:-46px;left:50%;width:170px;margin-left:-85px;height:auto;pointer-events:none}
 .cal{position:relative}
-.cc{position:absolute;width:140px;height:auto;pointer-events:none}
-.cc.a{top:-34px;right:-36px}.cc.b{bottom:-34px;left:-36px;transform:rotate(180deg)}
+.cc{position:absolute;width:140px;height:auto;pointer-events:none; transform: rotate(15deg);}
+.cc.a{top:-34px;right:-36px}.cc.b{bottom:-34px;left:-36px;transform:rotate(209deg)}
 .tl svg.tf{inset:auto;width:38px;height:38px;transform:translate(-50%,-50%);pointer-events:none}
 .end{position:relative}
 .fgs{position:absolute;top:-58px;left:0;pointer-events:none}
@@ -349,7 +355,9 @@ html.go .mu{opacity:1;transform:scale(1);pointer-events:auto;transition-delay:4.
 </div>
 
 <header class="hero">
-  <div class="frame"><svg class="crown" viewBox="0 0 120 63" aria-hidden="true"><use href="#gcl"/></svg><div>
+  <div class="frame"><img class="flowers" src="./flowers-removebg-preview.png" alt="">
+    <!-- <svg class="crown" viewBox="0 0 120 63" aria-hidden="true"><use href="#gcl"/></svg> -->
+    <div>
     <div class="mono script">T M</div>
     <p>بسم الله الرحمن الرحيم</p>
     <p>﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ ﴾</p>
@@ -370,7 +378,10 @@ html.go .mu{opacity:1;transform:scale(1);pointer-events:auto;transition-delay:4.
 
 
 <section style="padding-top:10px"><svg class="sb bg" style="top:10px;right:16px;width:24px;--r:6deg;animation-delay:-0.0s" viewBox="0 0 40 20" aria-hidden="true"><use href="#bd"/></svg><svg class="sb bg" style="top:34px;right:52px;width:17px;--r:-6deg;animation-delay:-1.7s" viewBox="0 0 40 20" aria-hidden="true"><use href="#bd"/></svg><svg class="sb bg" style="top:18px;left:14px;width:20px;--r:-8deg;animation-delay:-3.4s" viewBox="0 0 40 20" aria-hidden="true"><use href="#bd"/></svg>
-  <div class="cal"><svg class="cc a" viewBox="0 0 120 63" aria-hidden="true"><use href="#gcl"/></svg><svg class="cc b" viewBox="0 0 120 63" aria-hidden="true"><use href="#gcl"/></svg>
+  <div class="cal">
+    <!-- <svg class="cc a" viewBox="0 0 120 63" aria-hidden="true"><use href="#gcl"/></svg><svg class="cc b" viewBox="0 0 120 63" aria-hidden="true"><use href="#gcl"/></svg> -->
+     <img class="flowers cc a" src="./flowers-removebg-preview.png" alt="">
+     <img class="flowers cc b" src="./flowers-removebg-preview.png" alt="">
     <h2 class="lat script">December</h2>
     <table id="cal"></table>
     <div class="say"> الخميس  ·   <span class="lat">PM 7:00</span></div><br><button id="addcal" class="addcal" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M12 18.2l-3-2.9a1.8 1.8 0 0 1 2.6-2.4l.4.4.4-.4a1.8 1.8 0 0 1 2.6 2.4z"/></svg>أضف للتقويم</button>
